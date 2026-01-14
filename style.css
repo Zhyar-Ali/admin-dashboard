@@ -20,30 +20,50 @@ ul{
 .sidebar{
     grid-area: 1 / 1 / 4 /2;
     display: grid;
-    justify-content: space-around;
+    justify-content: first baseline;
     align-content: start;
     background-color: rgb(22, 170, 255);
     color: white;
     gap: 35px;
 }
 .title{
+    display: flex;
+    gap: 15px;
     font-size: 30px;
     font-weight: bold;
     padding-top: 20px;
+    align-items: center;
+}
+.svg-dash{
+    fill: aliceblue;
+    width: 50px;
+    margin-left: 7%; 
+}
+.svg{
+    fill: aliceblue;
+    width: 25px;  
 }
 .nav{
     font-size: 20px;
     font-weight: bold;
 }
 .nav li{
+    display: flex;
+    align-items: center;
     padding-top: 15px;
+    gap: 30px;
+    padding-left: 10%;
 }
 .setting{
     font-size: 20px;
     font-weight: bold;
 }
 .setting li{
+    display: flex;
+    align-items: center;
     padding-top: 15px;
+    gap: 30px;
+    padding-left: 10%;
 }
 .projects{
     grid-area: 2 / 2 / 4 / 3;
