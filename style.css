@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    gap: 10px;
+}
+.header{
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: orange;
+}
+.sidebar{
+    grid-area: 1 / 1 / 4 /2;
+    display: grid;
+    justify-content: space-around;
+    align-content: start;
+    background-color: rgb(22, 170, 255);
+    color: white;
+    gap: 35px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.nav{
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav li{
+    padding-top: 15px;
+}
+.setting{
+    font-size: 20px;
+    font-weight: bold;
+}
+.setting li{
+    padding-top: 15px;
+}
+.projects{
+    grid-area: 2 / 2 / 4 / 3;
+    background-color: orange;
+}
+.announcements{
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: orange;
+}
+.trending{
+    grid-area: 3 / 3 / 4 / 4;
+    background-color: orange;
+}
