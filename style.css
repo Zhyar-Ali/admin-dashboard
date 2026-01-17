@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} 
+body{
+    background-color: rgb(212, 212, 224);
 }
 ul{
     list-style: none;
@@ -11,11 +14,10 @@ ul{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
-    gap: 10px;
 }
 .header{
     grid-area: 1 / 2 / 2 / 4;
-    background-color: orange;
+    background-color: white;
 }
 .sidebar{
     grid-area: 1 / 1 / 4 /2;
@@ -67,11 +69,96 @@ ul{
 }
 .projects{
     grid-area: 2 / 2 / 4 / 3;
-    background-color: orange;
+    background-color: rgb(212, 212, 224);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.25fr ,repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#your{
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: baseline;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.project{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(136, 136, 161);
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    width:95%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+}
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+.description{
+    color: rgb(77, 77, 77);
+}
+.text{
+    grid-area: 1/1/2/3;
+    margin-left: 15px;
+    margin-top: 5%;
+}
+.svg2{
+    fill: rgb(46, 46, 46);
+    width: 25px;  
+    margin: 10px;
+}
+.icons{
+    grid-area: 2/2/3/3;
 }
 .announcements{
     grid-area: 2 / 3 / 3 / 4;
-    background-color: orange;
+    background-color: rgb(212, 212, 224);
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    justify-items: center;
+}
+#your2{
+    align-self: center;
+    justify-self: baseline;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.announcement{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(136, 136, 161);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.text2{
+    width: 90%;
+    padding: 20px;
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.text2:first-child{
+    border-top: none;
+}
+.name2{
+    font-weight: bold;
+    font-size: 15px;
+}
+.description2{
+    color: rgb(77, 77, 77);
+    font-size: 13px;
 }
 .trending{
     grid-area: 3 / 3 / 4 / 4;
