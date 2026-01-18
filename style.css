@@ -161,17 +161,20 @@ ul{
     background-color: rgb(215, 222, 233);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.25fr ,repeat(3, 1fr);
-    gap: 10px;
-    justify-items: center;
-    align-items: center;
-    padding-top: 20px;
+    grid-template-rows: 0.25fr 5fr;
     padding-bottom: 20px;
     z-index: 1;
+}
+.project-grid{
+    display: grid;
+    grid-area: 2 / 1 / 3 / 3;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    justify-items: center;
 }
 #your{
     grid-area: 1 / 1 / 2 / 3;
     justify-self: baseline;
+    align-self: end;
     padding-left: 20px;
     font-weight: bold;
     font-size: 20px;
@@ -182,11 +185,12 @@ ul{
     border-left: 10px solid orange;
     border-radius: 10px;
     width:95%;
-    height: 80%;
+    height: 82%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2,1fr);
     align-items: center;
+    align-self: center;
 }
 .name{
     font-weight: bold;
@@ -214,14 +218,14 @@ ul{
     width: 90%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 1fr;
+    grid-template-rows: 0.75fr 4fr;
     justify-items: center;
     z-index: 1;
 }
 #your2{
-    align-self: center;
-    justify-self: baseline;
-    padding-left: 20px;
+    align-self: end;
+    padding-bottom: 20px;
+    justify-self: start;
     font-weight: bold;
     font-size: 20px;
 }
@@ -233,7 +237,7 @@ ul{
     grid-template-rows: repeat(3,1fr);
     justify-items: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .text2{
     width: 90%;
@@ -251,7 +255,53 @@ ul{
     color: rgb(77, 77, 77);
     font-size: 13px;
 }
-.trending{
+.trendings{
     grid-area: 3 / 3 / 4 / 4;
-    background-color: orange;
+    display: grid;
+    grid-template: 0.25fr 4fr / 1fr;
+    padding-bottom: 47px;
+}
+#your3{
+    margin-top: 30px;
+    padding-bottom: 10px;
+    justify-self: start;
+    font-weight: bold;
+    font-size: 20px;
+}
+.trending{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(167, 167, 187);
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(4,1fr)/1fr;
+    gap: 20px;
+    width: 90%;
+}
+.trending-pfp{
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+}
+.pfp3{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.trnd-pfp{
+    justify-self: center;
+}
+.trending-pfp:first-child{
+    padding-top: 20px;
+}
+.trending-pfp:last-child{
+    padding-bottom: 20px;
+}
+.trnd-text{
+    align-self: center;
+}
+.trnd-at{
+    font-weight: bold;
+}
+.trnd-name{
+    color: rgb(77, 77, 77);
+    font-size: 15px;
 }
