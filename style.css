@@ -4,7 +4,7 @@
     box-sizing: border-box;
 } 
 body{
-    background-color: rgb(212, 212, 224);
+    background-color: rgb(215, 222, 233);
 }
 ul{
     list-style: none;
@@ -18,7 +18,96 @@ ul{
 .header{
     grid-area: 1 / 2 / 2 / 4;
     background-color: white;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    box-shadow: 3px 3px 5px rgb(167, 167, 187);
+    z-index: 2;
 }
+.search{
+    display: flex;
+    grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+    padding-left: 35px;
+    gap: 15px;
+}
+.svg3{
+    fill: rgb(0, 0, 0);
+    width: 25px;  
+}
+.search-bar{
+    width: 750px;
+    height: 30px;
+    background-color: rgb(215, 222, 233);
+    border-radius: 20px;
+}
+.pfp{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template: 1fr / 1fr 2fr 4fr;  
+    padding-bottom: 5px;
+}
+.pfp1{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+.pic{
+    justify-self: center;
+}
+.intro{
+   align-self: center;
+}
+.greet{
+    font-weight: bold;
+    font-size: 14px;
+}
+.acc{
+    font-weight: bold;
+    font-size: 20px;
+}
+.top-right{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr ;
+    padding-right: 50px;
+}
+.pfp2{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+#bell{
+    align-self: center;  
+    justify-self: end;
+}
+.pic2{
+    justify-self: end;
+    align-self: center; 
+    padding-right: 20px;
+}
+.scnd-name{
+    align-self: center; 
+    justify-self: baseline;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav-buttons{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: center;
+    padding-right: 50px;
+}
+.new, .upload, .share{
+    background-color: rgb(22, 170, 255);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+}
+
 .sidebar{
     grid-area: 1 / 1 / 4 /2;
     display: grid;
@@ -69,7 +158,7 @@ ul{
 }
 .projects{
     grid-area: 2 / 2 / 4 / 3;
-    background-color: rgb(212, 212, 224);
+    background-color: rgb(215, 222, 233);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.25fr ,repeat(3, 1fr);
@@ -78,6 +167,7 @@ ul{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    z-index: 1;
 }
 #your{
     grid-area: 1 / 1 / 2 / 3;
@@ -88,7 +178,7 @@ ul{
 }
 .project{
     background-color: white;
-    box-shadow: 5px 5px 5px rgb(136, 136, 161);
+    box-shadow: 3px 3px 5px rgb(167, 167, 187);
     border-left: 10px solid orange;
     border-radius: 10px;
     width:95%;
@@ -120,12 +210,13 @@ ul{
 }
 .announcements{
     grid-area: 2 / 3 / 3 / 4;
-    background-color: rgb(212, 212, 224);
+    background-color: rgb(215, 222, 233);
     width: 90%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 1fr;
     justify-items: center;
+    z-index: 1;
 }
 #your2{
     align-self: center;
@@ -136,7 +227,7 @@ ul{
 }
 .announcement{
     background-color: white;
-    box-shadow: 5px 5px 5px rgb(136, 136, 161);
+    box-shadow: 3px 3px 5px rgb(167, 167, 187);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
